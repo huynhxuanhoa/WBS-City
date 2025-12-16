@@ -223,7 +223,7 @@ export default function MinecraftServer() {
                   ) : (
                     `${serverStatus?.players.online || 0} / ${
                       serverStatus?.players.max || 0
-                    } players`
+                    } Người chơi`
                   )}
                 </CardDescription>
               </CardHeader>
@@ -240,7 +240,7 @@ export default function MinecraftServer() {
                 ) : serverStatus?.players.list &&
                   serverStatus.players.list.length > 0 ? (
                   <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
-                    {console.log("Player List:", serverStatus.players.list)}
+                    {console.log("Danh sách người chơi:", serverStatus.players.list)}
                     {serverStatus.players.list.map((player, index) => (
                       <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
