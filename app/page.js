@@ -44,7 +44,7 @@ export default function MinecraftServer() {
         },
         version: data.version || "Unknown",
         description:
-          data.motd?.clean?.[0] || "Welcome to our Minecraft server!",
+          data.motd?.clean?.[0] || "Support 1.18 => 1.21.10! Havoc City sẽ cho bạn những trải nghiệm thú vị và hấp dẫn!",
       });
     } catch (error) {
       console.error("Failed to fetch server status:", error);
@@ -63,8 +63,8 @@ export default function MinecraftServer() {
   const copyIP = () => {
     navigator.clipboard.writeText(SERVER_IP);
     toast({
-      title: "Server IP copied!",
-      description: "The IP has been copied to your clipboard.",
+      title: "Đã copy IP Server!",
+      description: "Đã copy vào bảng nhớ tạm của bạn!",
     });
   };
 
@@ -288,21 +288,21 @@ export default function MinecraftServer() {
                 <div className="grid gap-4 md:grid-cols-3">
                   {[
                     {
-                      title: "Survival Experience",
+                      title: "Trải nghiệm Sinh tồn (Survival)",
                       description:
-                        "Pure vanilla survival gameplay with essential commands",
-                      icon: "⚔️",
+                        "Lối chơi sinh tồn thuần túy (Vanilla) cùng các lệnh hỗ trợ thiết yếu.",
+                      icon: "🌌",
                     },
                     {
-                      title: "Active Community",
+                      title: "Cộng đồng Sôi nổi",
                       description:
-                        "Friendly players and regular community events",
+                        "Người chơi thân thiện và thường xuyên tổ chức sự kiện.",
                       icon: "🏰",
                     },
                     {
-                      title: "Anti-Grief Protection",
+                      title: "Bảo vệ Tài sản (Anti-Grief)",
                       description:
-                        "Advanced protection systems to keep your builds safe",
+                        "Hệ thống bảo vệ tiên tiến giúp công trình của bạn luôn an toàn.",
                       icon: "🛡️",
                     },
                   ].map((feature, index) => (
