@@ -113,7 +113,7 @@ export default function MinecraftServer() {
             {process.env.NEXT_PUBLIC_NAME}
           </h1>
           <p className="text-gray-300 minecraft-text">
-            HAVOCX CITY!
+            Hãy tham gia cùng chúng tôi!
           </p>
         </motion.div>
 
@@ -152,7 +152,7 @@ export default function MinecraftServer() {
                   </TooltipProvider>
                 </div>
                 <CardDescription className="text-[#8B8B8B] minecraft-text">
-                  thông tin theo thời gian thực
+                  Trạng thái theo thời gian thực
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -215,7 +215,7 @@ export default function MinecraftServer() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-[#E0E0E0] minecraft-text">
                   <Users className="h-5 w-5" />
-                  Online Players
+                  Người chơi đang online
                 </CardTitle>
                 <CardDescription className="text-[#8B8B8B] minecraft-text">
                   {loading ? (
@@ -278,10 +278,10 @@ export default function MinecraftServer() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-[#E0E0E0] minecraft-text">
                   <Crown className="h-5 w-5" />
-                  Server Features
+                  Tính năng server
                 </CardTitle>
                 <CardDescription className="text-[#8B8B8B] minecraft-text">
-                  What makes our server special
+                  Điều gì làm server minecraft chúng tôi đặc biệt?
                 </CardDescription>
               </CardHeader>
               <CardContent>
