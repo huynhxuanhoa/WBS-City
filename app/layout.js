@@ -1,28 +1,23 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// Cấu hình Metadata (tiêu đề trang, mô tả)
-export const metadata: Metadata = {
+// Chú ý: Ở file JS, ta dùng cú pháp JSDoc để mô tả metadata
+// Nếu bạn muốn dùng Metadata chi tiết hơn, bạn cần dùng file .tsx
+export const metadata = {
   title: "WBS-Havoc | Minecraft Server",
   description: "Server Minecraft Survival & PvP đỉnh cao tại Việt Nam",
 };
 
-// Hàm RootLayout (Component chính)
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }) {
+  // Loại bỏ khai báo kiểu dữ liệu (type annotation) cho { children }
   return (
     <html lang="vi">
       <body className={inter.className}>
-        {/* Children là nội dung chính của trang (page.tsx) */}
         {children}
 
-        {/* --- PHẦN WATERMARK MỚI ĐÃ THÊM --- */}
+        {/* --- PHẦN WATERMARK NEVILLE STUDIO (Vẫn giữ nguyên) --- */}
         <div className="fixed bottom-4 right-4 z-50 pointer-events-none select-none opacity-30 mix-blend-screen">
           <div className="text-right">
             <h1 className="text-5xl font-black italic text-red-600 tracking-tighter">Neville Studio</h1>
@@ -32,7 +27,7 @@ export default function RootLayout({
           </div>
         </div>
         {/* --- KẾT THÚC PHẦN WATERMARK --- */}
-
+        
       </body>
     </html>
   );
