@@ -20,9 +20,9 @@ export default function RootLayout({ children }) {
         {/* --- PHẦN WATERMARK NEVILLE STUDIO (Vẫn giữ nguyên) --- */}
         <div className="fixed bottom-4 right-4 z-50 pointer-events-none select-none opacity-30 mix-blend-screen">
           <div className="text-right">
-            <h1 className="text-5xl font-black italic text-red-600 tracking-tighter">Neville Studio</h1>
-            <p className="text-[10px] text-gray-400 font-mono uppercase tracking-widest -mt-2 mr-1">
-              WBS-Official
+            <h1 className="text-[10px] font-black italic text-red-600 tracking-tighter">Neville Studio</h1>
+            <p className="text-[5px] text-gray-400 font-mono uppercase tracking-widest -mt-2 mr-1">
+              WEBSITE TESTING MODE
             </p>
           </div>
         </div>
