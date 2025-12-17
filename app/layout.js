@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 // Nếu bạn muốn dùng Metadata chi tiết hơn, bạn cần dùng file .tsx
 export const metadata = {
   title: "Havoc City | Meow",
-  description: "Server Minecraft Survival & PvP đỉnh cao tại Việt Nam",
+  description: "Server Minecraft Survival và Cộng đồng chill nhất VN",
 };
 
 export default function RootLayout({ children }) {
