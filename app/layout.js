@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 // Chú ý: Ở file JS, ta dùng cú pháp JSDoc để mô tả metadata
 // Nếu bạn muốn dùng Metadata chi tiết hơn, bạn cần dùng file .tsx
 export const metadata = {
-  title: "WBS-Havoc | Minecraft Server",
+  title: "Havoc City | Meow",
   description: "Server Minecraft Survival & PvP đỉnh cao tại Việt Nam",
 };
 
